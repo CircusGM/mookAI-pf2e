@@ -1,0 +1,47 @@
+{
+  "id": "mookAI-pf2e",
+  "title": "mookAI PF2E - Pathfinder 2nd Edition support for mookAI",
+  "description": "<p>The mook is characterizied by a lack of ambition: they must be told where to go, what to do, and when to do it. This module automates those decisions on their behalf, freeing you of managing their doomed efforts.</p><p>The scope of this module does not include full automation. It is merely a tool to handle the movement and choices of low-intelligence, low-utility, high-quantity enemies (e.g. goblins, wild animals, barbarians) so that the game master may focus on the Heroes and their true adversaries.</p><p>This module adds a hotkey ('g') that, when pressed, triggers this automation. The module finds the token with the current initiative, checks its vision for possible targets, chooses one to attack (or explores if there are none), plans a collission-free path, moves the token into range, attacks, and ends the turn. Mooks will repeat these steps to account for changes in vision and will run until they attack or run out of resources.</p><p>In a future release, rules for taking a turn will be customized from a token's actor's character sheet, but for now, settings apply to all tokens.</p><p>Please read the documentation.</p>",
+  "authors": [
+    {
+      "name": "CircusGM",
+      "discord": "CircusGM"
+    }
+  ],
+  "version": "0.6.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331",
+    "maximum": "13"
+  },
+  "esmodules": [
+    "scripts/mookPF2e.js"
+  ],
+  "styles": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+        "compatibility": {
+          "minimum": "6.8.1",
+          "verified": "6.8.1"
+        }
+      }
+    ],
+    "requires": [
+            {
+                "id": "lib-find-the-path",
+                "type": "module"
+            },
+            {
+              "id": "mookAI",
+              "type": "module"
+            }
+        ]   
+  },
+  "url": "https://github.com/CircusGM/mookAI-pf2e",
+  "manifest": "https://raw.githubusercontent.com/CircusGM/mookAI-pf2e/main/module.json",
+  "download": "https://github.com/CircusGM/mookAI-pf2e/releases/latest/download/mookAI-pf2e-main.zip"
+}
