@@ -5,10 +5,10 @@
   "authors": [
     {
       "name": "CircusGM",
-      "discord": "CircusGM"
+      "discord": "Malvargr"
     }
   ],
-  "version": "1.0.2",
+  "version": "#{VERSION}#",
   "compatibility": {
     "minimum": "12",
     "verified": "12.331",
@@ -41,7 +41,9 @@
             }
         ]   
   },
-  "url": "https://github.com/CircusGM/mookAI-pf2e",
-  "manifest": "https://raw.githubusercontent.com/CircusGM/mookAI-pf2e/main/module.json",
-  "download": "https://github.com/CircusGM/mookAI-pf2e/releases/latest/download/mookAI-pf2e-main.zip"
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md"
 }
