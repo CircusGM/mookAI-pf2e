@@ -32,11 +32,11 @@
     ],
     "requires": [
             {
-                "id": "lib-find-the-path",
+                "id": "lib-find-the-path-12",
                 "type": "module"
             },
             {
-              "id": "mookAI",
+              "id": "mookAI-12",
               "type": "module"
             }
         ]   

@@ -1,6 +1,6 @@
-import { MookModel, ActionType } from "../../mookAI/scripts/mookModel.js";
-import { MookModelSettings } from "../../mookAI/scripts/mookModelSettings.js";
-import { debugLog } from "../../mookAI/scripts/behaviors.js";
+import { MookModel, ActionType } from "../../mookAI-12/scripts/mookModel.js";
+import { MookModelSettings } from "../../mookAI-12/scripts/mookModelSettings.js";
+import { debugLog } from "../../mookAI-12/scripts/behaviors.js";
 
 /* 
    PF2e-specific Mook model that extends the base mookAI model.
@@ -270,8 +270,8 @@ Hooks.once("init", () => {
 
     // Debug logging for mookAI module
     // console.log("mookAI-PF2e | Checking mookAI module status:");
-    // console.log("- mookAI module object:", game.modules.get("mookAI"));
-    // console.log("- mookAI module active:", game.modules.get("mookAI")?.active);
+    // console.log("- mookAI module object:", game.modules.get("mookAI-12"));
+    // console.log("- mookAI module active:", game.modules.get("mookAI-12")?.active);
 });
 
 // Try registration at different hook points to ensure we catch when mookAI is ready
@@ -287,7 +287,7 @@ Hooks.once("ready", () => {
 
 // Helper function to attempt registration
 function tryRegisterModel() {
-    const mookAI = game.modules.get("mookAI")?.api;
+    const mookAI = game.modules.get("mookAI-12")?.api;
 
     // debugLog("- registerSystemModel exists:", typeof mookAI.registerSystemModel === "function");
 
@@ -300,7 +300,7 @@ function tryRegisterModel() {
         }
     } else {
         console.warn("mookAI-PF2e | mookAI registration function not found. Debug info:");
-        debugLog("- mookAI full object:", game.modules.get("mookAI"));
+        debugLog("- mookAI full object:", game.modules.get("mookAI-12"));
 
         console.warn("PF2e model registration skipped.");
     }
